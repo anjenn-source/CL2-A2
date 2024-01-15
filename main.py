@@ -41,4 +41,19 @@ combo1 = ttk.Combobox(main, width=8, justify=CENTER, font=('Ivy 12 bold'))
 combo1['values'] = (currency)
 combo1.place(x=50, y=115)
 
+
+to_label = Label(main, text= 'To', width=8, height=1, pady=0, padx=0, relief='flat', anchor= NW, font=('Ivy 10 bold'), bg=cor0, fg=cor1)
+to_label.place(x=158, y=90)
+combo2 = ttk.Combobox(main, width=8, justify=CENTER, font=('Ivy 12 bold'))
+combo2['values'] = (currency)
+combo2.place(x=160, y=115)
+
+value = Entry(main, width=22, justify=CENTER, font=('Ivy 12 bold'), relief=SOLID)
+value.place(x=50, y=155)
+
+button = Button(main, text='Converter', width=19, padx=5, height=1, bg=cor2, fg=cor0, font=('Ivy 12 bold'))
+button.place(x=50, y=210)
+
+
+
 window.mainloop()
